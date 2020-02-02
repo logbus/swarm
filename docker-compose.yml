@@ -62,7 +62,7 @@ services:
         constraints:
           - node.role==manager
       restart_policy:
-        condition: always
+        condition: on-failur
     ports:
       - "5000:8080"
 
