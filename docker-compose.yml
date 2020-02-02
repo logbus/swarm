@@ -8,8 +8,9 @@ services:
       dockerfile: ../frontend.Dockerfile
     deploy:
       replicas: 3
-      constraints:
-        - node.role==worker
+      placement:
+        constraints:
+          - node.role==worker
     depends_on:
       - backend
     networks:
@@ -24,8 +25,9 @@ services:
       dockerfile: ../backend.Dockerfile
     deploy:
       replicas: 5
-      constraints:
-        - node.role==worker
+      placement:
+        constraints:
+          - node.role==worker
     depends_on:
       - database
     networks:
