@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/backend
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+
+    hibernate:
+      ddl-auto=create: false
+
