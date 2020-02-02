@@ -42,7 +42,7 @@ services:
         condition: on-failure
     restart: on-failure
     volumes:
-      - database
+      - db-data:/var/lib/postgresql/data
     networks:
       - database
     environment:
@@ -66,10 +66,9 @@ services:
     ports:
       - "5000:8080"
 
-volumes:
-  database:
-    driver: local
-
 networks:
   database:
   backend:
+
+volumes:
+  db-data:
