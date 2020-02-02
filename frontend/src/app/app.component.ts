@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {PlatformLocation} from '@angular/common';
 import {HttpClient} from "@angular/common/http";
 
 interface User {
   lastName: string;
   firstName: string;
+  io: string;
 }
 
 @Component({
@@ -13,13 +13,11 @@ interface User {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public hostName: String;
   public requestTime: String;
   public backendResponse: String;
   public backendRequestTime: number;
 
   public constructor(private http: HttpClient) {
-    this.hostName = window.location.hostname;
   }
 
   public ngOnInit(): void {
