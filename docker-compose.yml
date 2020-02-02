@@ -7,7 +7,7 @@ services:
       context: ./frontend
       dockerfile: ../frontend.Dockerfile
     deploy:
-      replicas: 1
+      replicas: 3
     depends_on:
       - backend
     networks:
@@ -21,7 +21,7 @@ services:
       context: ./backend
       dockerfile: ../backend.Dockerfile
     deploy:
-      replicas: 1
+      replicas: 5
     depends_on:
       - database
     networks:
