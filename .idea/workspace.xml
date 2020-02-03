@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a764aa66-f040-40b0-aaff-14703d65902c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-stack-down.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-stack-up.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/boundary/BackendRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/boundary/BackendRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-machine/create-nodes.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/docker-machine/create-nodes.cmd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +150,7 @@
       <workItem from="1580573493665" duration="16782000" />
       <workItem from="1580662330123" duration="4263000" />
       <workItem from="1580733418601" duration="8255000" />
-      <workItem from="1580747316378" duration="223000" />
+      <workItem from="1580747316378" duration="535000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1580665462579</created>
@@ -170,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580739245985</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1580747567044</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580747567044</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +193,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/frontend" />
     </ignored-roots>
@@ -217,10 +222,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="419" y="162" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1474.864@0.0.1474.864" timestamp="1580569911610" />
-    <state x="362" y="29" key="CommitChangelistDialog2" timestamp="1580739244835">
+    <state x="362" y="29" key="CommitChangelistDialog2" timestamp="1580747566040">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="362" y="29" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1580739244835" />
+    <state x="362" y="29" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1580747566040" />
     <state width="1431" height="325" key="GridCell.Tab.0.bottom" timestamp="1580744963048">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -257,10 +262,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="248" y="77" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1580662609710" />
-    <state x="331" y="167" key="Vcs.Push.Dialog.v2" timestamp="1580739248689">
+    <state x="331" y="167" key="Vcs.Push.Dialog.v2" timestamp="1580747569904">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="331" y="167" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1580739248689" />
+    <state x="331" y="167" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1580747569904" />
     <state x="435" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1580747333283">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
