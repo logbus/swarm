@@ -26,7 +26,7 @@ public class BackendRestController {
         User result = user.orElseGet(() -> new User("Not Found", "Not Found", "", "", ""));
         try {
             InetAddress inetAddress = InetAddress.getLocalHost();
-            result.setBackend(inetAddress.getHostAddress() + " (" + inetAddress.getHostName() + ")");
+            result.setBackend(inetAddress.getHostName() + " (" + inetAddress.getHostAddress() + ")");
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
