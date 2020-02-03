@@ -20,7 +20,7 @@ public class Initializer {
         usersRepository.dropUsersTable();
         usersRepository.createUsersTable();
         for (int i = 1; i <= 1000; i++) {
-            usersRepository.save(new User("lastName" + i, "firstName" + i, "", ""));
+            usersRepository.save(new User("lastName" + i, "firstName" + i, "", "", ""));
         }
         System.out.println("----- initializeDB() done -----");
     }

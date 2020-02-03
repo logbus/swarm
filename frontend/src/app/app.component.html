@@ -1,10 +1,20 @@
-<div>
+<div class="container">
   <h1>Frontend Demo</h1>
   <p class="label">Request time:</p>
   <p class="value">{{requestTime}}</p>
   <p class="label">Backend response:</p>
-  <p class="value">{{backendResponse}}</p>
+  <div class="response">
+    <p class="label">User-Data:</p>
+    <p class="value">{{backendResponse?.firstName}} {{backendResponse?.lastName}}</p>
+    <p class="label">Client:</p>
+    <p class="value">{{backendResponse?.client}}</p>
+    <p class="label">Proxy:</p>
+    <p class="value">{{backendResponse?.caller}}</p>
+    <p class="label">Backend:</p>
+    <p class="value">{{backendResponse?.backend}}</p>
+  </div>
   <p class="label">Backend response time:</p>
   <p class="value">{{backendRequestTime}} ms</p>
   <button (click)="reload()">Reload</button>
 </div>
+

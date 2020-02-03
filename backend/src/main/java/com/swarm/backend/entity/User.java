@@ -25,4 +25,8 @@ public class User {
     @Transient
     @Setter
     private String caller;
+
+    @Transient
+    @Setter
+    private String client;
 }

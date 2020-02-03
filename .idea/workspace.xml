@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a764aa66-f040-40b0-aaff-14703d65902c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/boundary/BackendRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/boundary/BackendRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/control/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/control/Initializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/swarm/backend/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
@@ -155,8 +154,17 @@
       <workItem from="1580568808365" duration="51000" />
       <workItem from="1580569563689" duration="3881000" />
       <workItem from="1580573493665" duration="16782000" />
-      <workItem from="1580662330123" duration="3082000" />
+      <workItem from="1580662330123" duration="4263000" />
+      <workItem from="1580733418601" duration="5810000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1580665462579</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580665462579</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +187,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/frontend" />
     </ignored-roots>
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
     <state x="331" y="92" key="#Assign_Data_Sources" timestamp="1580573409794">
@@ -201,22 +211,26 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="419" y="162" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1474.864@0.0.1474.864" timestamp="1580569911610" />
-    <state width="1431" height="325" key="GridCell.Tab.0.bottom" timestamp="1580664803486">
+    <state x="362" y="29" key="CommitChangelistDialog2" timestamp="1580665461483">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="325" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1580664803486" />
-    <state width="1431" height="325" key="GridCell.Tab.0.center" timestamp="1580664803486">
+    <state x="362" y="29" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1580665461483" />
+    <state width="1431" height="325" key="GridCell.Tab.0.bottom" timestamp="1580735636777">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="325" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1580664803486" />
-    <state width="1431" height="325" key="GridCell.Tab.0.left" timestamp="1580664803486">
+    <state width="1431" height="325" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1580735636777" />
+    <state width="1431" height="325" key="GridCell.Tab.0.center" timestamp="1580735636777">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="325" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1580664803486" />
-    <state width="1431" height="325" key="GridCell.Tab.0.right" timestamp="1580664803486">
+    <state width="1431" height="325" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1580735636777" />
+    <state width="1431" height="325" key="GridCell.Tab.0.left" timestamp="1580735636776">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="325" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1580664803486" />
+    <state width="1431" height="325" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1580735636776" />
+    <state width="1431" height="325" key="GridCell.Tab.0.right" timestamp="1580735636777">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="325" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1580735636777" />
     <state width="1431" height="325" key="GridCell.Tab.1.bottom" timestamp="1580596258438">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -237,10 +251,14 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="248" y="77" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1580662609710" />
-    <state x="435" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1580662332679">
+    <state x="331" y="167" key="Vcs.Push.Dialog.v2" timestamp="1580665466220">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="435" y="258" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1580662332679" />
+    <state x="331" y="167" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1580665466220" />
+    <state x="435" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1580733852372">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="435" y="258" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1580733852372" />
     <state x="400" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1580590083928">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

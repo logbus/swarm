@@ -4,7 +4,9 @@ import {HttpClient} from "@angular/common/http";
 interface User {
   lastName: string;
   firstName: string;
-  io: string;
+  client: string;
+  caller: string;
+  backend: string;
 }
 
 @Component({
@@ -14,7 +16,7 @@ interface User {
 })
 export class AppComponent implements OnInit {
   public requestTime: String;
-  public backendResponse: String;
+  public backendResponse: User;
   public backendRequestTime: number;
 
   public constructor(private http: HttpClient) {
@@ -24,10 +26,9 @@ export class AppComponent implements OnInit {
     this.requestTime = new Date().toLocaleTimeString("de");
     this.backendRequestTime = 0;
     // Call Backend
-    this.backendResponse = "waiting for response...";
     const startRequest = new Date().getMilliseconds();
-    this.http.get<User>("/api/users").subscribe(data => {
-      this.backendResponse = JSON.stringify(data);
+    this.http.get<User>("/api/users").subscribe(user => {
+      this.backendResponse = user;
       this.backendRequestTime = new Date().getMilliseconds() - startRequest;
     });
   }

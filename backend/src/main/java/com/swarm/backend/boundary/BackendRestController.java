@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.util.Optional;
+import java.util.*;
+
+import static java.util.Collections.singletonList;
 
 @RestController
 public class BackendRestController {
@@ -21,19 +23,18 @@ public class BackendRestController {
     public User getUsers(@RequestHeader HttpHeaders headers) {
         int randomNr = (int) Math.min(1 + (Math.random() * 100), 100);
         Optional<User> user = usersRepository.findById("lastName" + randomNr);
-        User result = user.isPresent() ? user.get() : new User("Not Found", "Not Found", "", "");
+        User result = user.orElseGet(() -> new User("Not Found", "Not Found", "", "", ""));
         try {
             InetAddress inetAddress = InetAddress.getLocalHost();
             result.setBackend(inetAddress.getHostAddress() + " (" + inetAddress.getHostName() + ")");
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
-        String caller = "(" + headers.getHost().getHostName() + ")";
-        InetAddress callerAddress = headers.getHost().getAddress();
-        if (callerAddress != null) {
-            caller = callerAddress.getHostAddress() + " " + caller;
-        }
-        result.setCaller(caller);
+
+        result.setClient(headers.getOrDefault("host", singletonList("header 'host' not set")).get(0) +
+                " (" + headers.getOrDefault("nginx_client_addr", singletonList("header 'nginx_client_addr not set")).get(0) + ")");
+        result.setCaller(headers.getOrDefault("nginx_hostname", singletonList("header 'nginx_hostname' not set")).get(0) +
+                " (" + headers.getOrDefault("nginx_server_addr", singletonList("header 'nginx_server_addr' not set")).get(0) + ")");
         return result;
     }
 }
