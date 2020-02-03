@@ -13,6 +13,8 @@ services:
           - node.role==worker
     depends_on:
       - backend
+      - database
+      - visualizer
     networks:
       - backend
     ports:
@@ -30,6 +32,7 @@ services:
           - node.role==worker
     depends_on:
       - database
+      - visualizer
     networks:
       - database
       - backend
