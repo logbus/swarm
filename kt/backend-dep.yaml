@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kt-backend
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: kt
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: kt
+        tier: backend
+    spec:
+      containers:
+      - image: al2108/backend-swarm:1.0
+        name: kt-backend
+        ports:
+        - containerPort: 80

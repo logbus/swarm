@@ -1,8 +1,20 @@
 version: "3"
 
 services:
+  lb:
+    image: al2108/lb-swarm:1.0
+    build:
+      context: ./lb
+      dockerfile: ../lb.Dockerfile
+    depends_on:
+      - frontend
+    networks:
+      - frontend
+    ports:
+      - "80:80"
+
   frontend:
-    image: al2108/frontend-swarm
+    image: al2108/frontend-swarm:1.1
     build:
       context: ./frontend
       dockerfile: ../frontend.Dockerfile
@@ -17,11 +29,11 @@ services:
       - visualizer
     networks:
       - backend
-    ports:
-      - "4000:80"
+      - frontend
+
 
   backend:
-    image: al2108/backend-swarm
+    image: al2108/backend-swarm:1.0
     build:
       context: ./backend
       dockerfile: ../backend.Dockerfile
@@ -76,6 +88,7 @@ services:
 networks:
   database:
   backend:
+  frontend:
 
 volumes:
   db-data:

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a764aa66-f040-40b0-aaff-14703d65902c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lb.Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb/lb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,25 +88,35 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/backend/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lb" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/frontend/node_modules/protractor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\data\src\swarm\frontend\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\data\src\swarm\lb" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\data\src\swarm" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="E2E Tests (frontend)" type="JavaScriptTestRunnerProtractor">
@@ -150,7 +166,9 @@
       <workItem from="1580573493665" duration="16782000" />
       <workItem from="1580662330123" duration="4263000" />
       <workItem from="1580733418601" duration="8255000" />
-      <workItem from="1580747316378" duration="736000" />
+      <workItem from="1580747316378" duration="1353000" />
+      <workItem from="1580911395901" duration="1265000" />
+      <workItem from="1580920734328" duration="3725000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1580665462579</created>
@@ -180,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580747873068</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <created>1580748066676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580748066676</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,10 +254,14 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="419" y="162" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1474.864@0.0.1474.864" timestamp="1580569911610" />
-    <state x="362" y="29" key="CommitChangelistDialog2" timestamp="1580747872283">
+    <state x="362" y="29" key="CommitChangelistDialog2" timestamp="1580748065761">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="362" y="29" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1580747872283" />
+    <state x="362" y="29" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1580748065761" />
+    <state x="470" y="55" key="FileChooserDialogImpl" timestamp="1580921372855">
+      <screen x="0" y="0" width="1206" height="720" />
+    </state>
+    <state x="470" y="55" key="FileChooserDialogImpl/0.0.1206.720@0.0.1206.720" timestamp="1580921372855" />
     <state width="1431" height="325" key="GridCell.Tab.0.bottom" timestamp="1580744963048">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -265,17 +294,23 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state width="1431" height="325" key="GridCell.Tab.1.right/0.0.1474.864@0.0.1474.864" timestamp="1580596258438" />
-    <state x="248" y="77" key="SettingsEditor" timestamp="1580662609710">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="361" y="61" key="NewModule_or_Project.wizard" timestamp="1580921376518">
+      <screen x="0" y="0" width="1206" height="720" />
     </state>
+    <state x="361" y="61" key="NewModule_or_Project.wizard/0.0.1206.720@0.0.1206.720" timestamp="1580921376518" />
+    <state x="170" y="0" key="SettingsEditor" timestamp="1580921379232">
+      <screen x="0" y="0" width="1206" height="720" />
+    </state>
+    <state x="170" y="0" key="SettingsEditor/0.0.1206.720@0.0.1206.720" timestamp="1580921379232" />
     <state x="248" y="77" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1580662609710" />
-    <state x="331" y="167" key="Vcs.Push.Dialog.v2" timestamp="1580747875222">
+    <state x="331" y="167" key="Vcs.Push.Dialog.v2" timestamp="1580748068620">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="331" y="167" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1580747875222" />
-    <state x="435" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1580747333283">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="331" y="167" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1580748068620" />
+    <state x="356" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1580920734122">
+      <screen x="0" y="0" width="1206" height="720" />
     </state>
+    <state x="356" y="215" key="com.intellij.ide.util.TipDialog/0.0.1206.720@0.0.1206.720" timestamp="1580920734122" />
     <state x="435" y="258" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1580747333283" />
     <state x="400" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1580590083928">
       <screen x="0" y="0" width="1474" height="864" />

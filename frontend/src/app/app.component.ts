@@ -29,7 +29,8 @@ export class AppComponent implements OnInit {
     const startRequest = new Date().getMilliseconds();
     this.http.get<User>("/api/users").subscribe(user => {
       this.backendResponse = user;
-      this.backendRequestTime = new Date().getMilliseconds() - startRequest;
+      const endRequestTime = new Date().getMilliseconds();
+      this.backendRequestTime =  endRequestTime - startRequest;
     });
   }
 
