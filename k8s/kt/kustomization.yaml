@@ -1,0 +1,10 @@
+resources:
+    - lb-dep.yaml
+    - lb-svc.yaml
+    - frontend-dep.yaml
+    - frontend-svc.yaml
+    - backend-dep.yaml
+    - backend-svc.yaml
+    - database-pod.yaml
+    - database-svc.yaml
+    - database-pvc.yaml

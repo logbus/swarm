@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kt-lb
+  labels:
+    app: kt
+spec:
+  selector:
+    matchLabels:
+      app: kt
+      tier: lb
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kt
+        tier: lb
+    spec:
+      containers:
+      - name: kt-lb
+        image: al2108/lb-swarm:1.0
+        ports:
+        - containerPort: 80
+

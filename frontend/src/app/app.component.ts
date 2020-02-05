@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit(): void {
+    console.log("Version 1.3 running");
     this.requestTime = new Date().toLocaleTimeString("de");
     this.backendRequestTime = 0;
     // Call Backend
